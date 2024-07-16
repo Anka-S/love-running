@@ -101,4 +101,14 @@ padding-left: 1rem;
     .nav-toggle-label {
         display: none;
     }
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    /* Main content */
+    main {
+        /* Push main content down to accomodate larger header */
+        margin-top: 89px;
+    }
 }
