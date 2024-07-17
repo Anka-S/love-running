@@ -57,7 +57,7 @@ nav {
     position: absolute;
     background-color: #fff;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     left: 0;
     display: none;
@@ -101,6 +101,29 @@ position: relative;
 #cover-text > h2, #cover-text > h3 {
     color: #fff;
 }
+/* Reasons */
+#reasons {
+    margin: 20px auto;
+    width: 90%;
+}
+#reasons h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Benefits */
+#benefits p {
+    padding: 0 20px;
+}
+#benefits-physical > div, #benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -114,6 +137,7 @@ position: relative;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
@@ -134,14 +158,14 @@ padding-left: 1rem;
         display: none;
     }
     #logo {
-        font-size: 200%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
     /* Main content */
     main {
-        /* Push main content down to accomodate larger header */
-        margin-top: 89px;
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
     }
     /* Hero */
     #cover-text {
