@@ -91,11 +91,13 @@ nav {
 
 /* Main */
 main {
-    /* Make main element take up any surplus space to push footer down */
+/* Enlarge main element to push footer down*/    
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
-    margin-top: 47px;
 }
 
 /*Hero section*/
@@ -212,13 +214,14 @@ hr {
     background-image: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
+    padding: 20px 10% 0 10%;
     flex-grow: 1;
+
 }
 #signup-form {
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
     padding: 30px;
-    margin: 20px 10px;
 }
 #signup-form > h2 {
     color: #fafafa;
@@ -322,12 +325,12 @@ hr {
         width: 100%;
     }
 
-    #benefits-physical>div,
-    #benefits-mental>div {
+    #benefits-physical > div,
+    #benefits-mental > div {
         width: 75%;
     }
 
-    #benefits-mental>div {
+    #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
     }
@@ -336,6 +339,25 @@ hr {
     #photos {
         column-count: 3;
     }
+    /* Signup page */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+    #signup-form {
+        position: absolute;
+        max-width: 400px;
+        top: 150px;
+        left: 10%;
+    }
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
 
 }
 
@@ -381,6 +403,5 @@ hr {
     #photos {
         column-count: 4;
     }
-
 
 }
